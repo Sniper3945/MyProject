@@ -1,0 +1,573 @@
+/* css responsive mettre les menu aux millieu pour les écran de + de 1024 px*/
+/* trouver une idée de suite pour le site portfolio  */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar-thumb{
+  color:black;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+	font-family: 'Josefin Sans', sans-serif;
+  color:white;
+  overflow-x: hidden; 
+}
+header{
+  height: 100vh;
+	width: 100%;
+	background-image: url(icy-summit-of-a-mountain-on-a-frosty-night.jpg);
+	background-size: cover;
+	background-position: center;
+}
+nav {
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+	justify-content: space-between;
+  padding: 15px 25px;
+  padding-top: 25px;
+  padding-left: 15;
+	padding-right: 8%;
+  transition: all 0.25s ease-in-out;
+  font-size: 16px;
+}
+
+.MyProject{
+  position: absolute;
+  padding-left: auto;
+  font-family: 'Josefin Sans', sans-serif;
+  text-decoration: none;
+  font-family: Roboto Flex,sans-serif;
+  position: relative;
+  font-size: 25px;
+  color: #fafafa;
+  
+}
+.MyProject::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background:#fafafa;
+  transform-origin:100% 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-out;
+}
+.MyProject:hover::after {
+  transform-origin: 0 0;
+  transform: scaleX(1)
+}
+/* fvhgsjhwfjdnstjnbsjs */
+/*rtjbsrubqtujdyubeykjeutj  */
+.hamburger {
+  display: none;
+}
+.navlinks-container{
+  align-items: center;
+}
+.navlinks-container a {
+  justify-content: space-between;
+  margin: 0 10px;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fafafa;
+  display: inline-block;
+  position: relative;
+}
+.navlinks-container a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  width: 100%;
+  height: 1px;
+  background:#fafafa;
+  transform-origin:100% 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-out;
+}
+
+.navlinks-container a:hover::after {
+  transform-origin: 0 0;
+  transform: scaleX(1)
+}
+
+.content{
+	position: absolute;
+	top: 50%;
+	left:8%;
+	transform: translateY(-50%);
+}
+.content #text{
+  order: 0;
+}
+h1{
+	color: white;
+	margin: 20px 0px 20px;
+	font-size: 75px;
+}
+h3{
+	color: white;
+	font-size: 25px;
+	margin-bottom: 50px;
+}
+h4{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 20px;
+}
+.head{
+  padding-top: 251px;
+  padding-right: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main{
+  height: 100vh;
+	width: 100%;
+  background: #191919;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.photo{
+  padding: 50px;
+}
+.about{
+	width: 100%;
+	padding: 10px 0px;
+	background-color: #191919;
+}
+.about img{
+	height: auto;
+	width: 430px;
+}
+.about-text{
+	width: 550px;
+}
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.about-text h2{
+	color: white;
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.about-text h5{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+.about-text p{
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+.boutton1{
+  background-color:#f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid #f9004d;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition:.4s; 
+  font-weight: bold;
+  overflow: hidden;
+  z-index: 0;
+  position: relative;
+  cursor: pointer;
+}
+.boutton1:hover{
+  background-color: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+
+.service{
+	background: #101010;
+	width: 100%;
+  height: 100vh;
+	padding: 50px 50px;
+}
+.title h2{
+	color: white;
+	font-size: 75px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+}
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.card{
+	height: 365px;
+	width: 335px;
+	padding: 20px 35px;
+	background: #191919;
+	border-radius: 20px;
+	margin: 15px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.card i{
+	font-size: 50px;
+	display: block;
+	text-align: center;
+	margin: 25px 0px;
+	color: #f9004d;
+
+}
+h5{
+	color: white;
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+.pra p{
+	color: white;
+	font-size: 16px;
+	line-height: 27px;
+	margin-bottom: 25px;
+}
+.card .button{
+	background-color:#f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid #f9004d;
+	font-weight: bold;
+	padding: 9px 22px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+.card .button:hover{
+	background-color: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
+
+
+
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+
+.contact-me{
+	width: 100%;
+	height: 100vh;
+	background: #191919;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.contact-me p{
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+.contact-me .button-two{
+	background-color:#f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+.contact-me .button-two:hover{
+	background-color: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
+.footer{
+	position: relative;
+	width: 100%;
+	height: 400px;
+	background: #101010;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.footer p:nth-child(1){
+	font-size: 30px;
+	color: white;
+	margin-bottom: 20px;
+	font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  margin-top: 130px;
+}
+.footer p:nth-child(2){
+	color: white;
+	font-size: 17px;
+	width: 500px;
+	text-align: center;
+	line-height: 26px;
+}
+.social{
+	display: flex;
+  margin-top: 90px;
+}
+.social a{
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:  #f9004d;
+	border-radius: 50%;
+	margin: 22px 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+.social a:hover{
+	transform: scale(1.3);
+	transition: .3s;
+}
+.end{
+	position: absolute;
+	color:#f9004d;
+	bottom: 35px;
+	font-size: 14px; 
+}
+.fasfa-bars ::before,.farfa-user ::before,.farfa-bell ::before{
+  content: none;
+}
+@media (max-width: 900px) {
+  .MyProject {
+    z-index: 999;
+    margin: 0 auto;
+    left: 25px;
+  }
+  .main-navlinks {
+    order: 1;
+    background: none;
+  }
+  /* Hamburger */
+  .hamburger {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: none;
+    z-index: 999;
+  }
+  .hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    pointer-events: none;
+    transition: opacity 0.3s 0.15s ease-out;
+  }
+  .hamburger span:nth-child(1),
+  .hamburger span:nth-child(3) {
+    transition: transform 0.3s ease-out;
+  }
+  .hamburger span:nth-child(1) {
+    transform: translateY(7px);
+  }
+  .hamburger span:nth-child(3) {
+    transform: translateY(-7px);
+  }
+  .hamburger.open span:nth-child(1) {
+    transform: translate(0) rotate(135deg);
+  }
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+    transition: opacity 0s ease-out;
+  }
+  .hamburger.open span:nth-child(3) {
+    transform: translate(0) rotate(-135deg);
+  }
+  /* fin hamburger animation */
+
+  /* debut text hamburger */
+
+  .navlinks-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    padding: 2rem;
+    transform: translateX(-100%);
+    transition: transform 1s;
+  }
+  .navlinks-container a {
+    color: white;
+    font-size: 2rem;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .navlinks-container a::after{
+    background: white;
+  }
+  .open {
+    transform: translate(0%);
+  }
+  /* fin text hamburger */
+  .content{
+    position: absolute;
+    top: 50%;
+    left:8%;
+    transform: translateY(-50%);
+  }
+  .content #text{
+    order: 0;
+  }
+  h1{
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 3rem;
+  }
+  h3{
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+  }
+  h4{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+  }
+  /* début effet responsive hamburger et écriture */
+  .navbar.scroll{
+    padding: 0.5rem 1rem;
+    background: #fafafa;
+  }
+  .hamburger.scroll span{
+    background: black;
+  }
+  .content{
+    order: 0;
+  }
+  .About.scroll,
+  #text{
+    color: black;
+  }
+  .Project.scroll,
+  #text{
+  color: black;
+  }
+  .cv.scroll,
+  #text{
+  color: black;
+  }
+  .Contact.scroll,
+  #text{
+  color: black;
+  }
+  /*fin effet responsive hamburger et écriture */
+}
+
+
+
+
+@media (max-width: 500px) {
+  .MyProject span {
+    font-size: 20px;
+  }
+  .navbar.scroll
+  {
+    padding: 0.5rem 1rem;
+    background: #fafafa;
+  }
+  .navlinks-container{
+    font-size: 0.5rem;
+  }
+  .content{
+    position: absolute;
+    top: 50%;
+    left:8%;
+    transform: translateY(-50%);
+  }
+  .content #text{
+    order: 0;
+  }
+  h1{
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 3rem;
+  }
+  h3{
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 50px;
+  }
+  h4{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 1rem;
+  }
+}
+.navbar.scroll
+{
+  padding: 1rem 1rem;
+  background: #fafafa;
+}
+.About.scroll,
+#text{
+  color: black;
+}
+.Project.scroll,
+#text{
+  color: black;
+}
+.skills.scroll,
+#text{
+  color: black;
+}
+.Contact.scroll,
+#text{
+  color: black;
+}
+.navlinks-container.scroll a::after{
+  background: black;
+}
+.MyProject.scroll{
+  color: black; 
+}
+.MyProject.scroll::after{
+  background-color: black
+}
+
